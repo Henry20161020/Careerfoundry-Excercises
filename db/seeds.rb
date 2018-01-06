@@ -5,5 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Product.create(name: "APICS CPIM Tutoring", description: 'APICS stands for American Production and Inventory Control Society"; CSCP stands for "Certified Supply Chain Professional"')
-Product.create(name: "APICS CSCP Tutoring", description: 'APICS stands for American Production and Inventory Control Society"; CSCP stands for "Certified Supply Chain Professional"')
+Product.create(name: "APICS CPIM Tutoring", description: 'APICS stands for American Production and Inventory Control Society"; CSCP stands for "Certified Supply Chain Professional"',
+  image_url: "https://picsbelgium.be/wp-content/uploads/2016/02/APICS-CPIM.jpg", price: 0.99)
+Product.create(name: "APICS CSCP Tutoring", description: 'APICS stands for American Production and Inventory Control Society"; CSCP stands for "Certified Supply Chain Professional"',
+  image_url: "https://media.licdn.com/media/AAEAAQAAAAAAAAMTAAAAJDRkYTU4YmUyLWJhOTktNDRkNC1iZGVhLTcxZDFjZTAyNmI5Mg.jpg",price: 0.99)
