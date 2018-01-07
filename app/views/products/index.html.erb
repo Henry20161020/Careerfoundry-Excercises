@@ -6,7 +6,7 @@
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-xs-6 col-md-4 col-sm-2 col-lg-2">
-        <%= image_tag(product.image_url, :height => 100, class: "img-responsive") %>
+        <%= image_tag(if product.image_url==="" then "https://lh3.googleusercontent.com/5sinG5_U9rajYjXRZ57nKDQsGTJG0jEG2zByNa9TndlX2Yu1MbfCtyoI2oMdRvQtxBA=w300-rw" else product.image_url end, :height => 100, class: "img-responsive") %>
         <a href="#"><h3><%= product.name %></h3></a>
         <p><%= product.description %></p>
         <strong>$ <%= product.price %>/h</strong>
