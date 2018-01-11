@@ -81,7 +81,7 @@ GEM
       mini_portile2 (~> 2.3.0)
 
     pg (0.21.0)
-
+    
     puma (3.11.0)
     rack (2.0.3)
     rack-test (0.8.2)
@@ -156,7 +156,7 @@ GEM
 
 PLATFORMS
   ruby
-  
+
 
 DEPENDENCIES
   byebug
