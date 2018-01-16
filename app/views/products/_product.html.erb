@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-md-6 col-sm-4 col-lg-2">
+<div class="col-xs-12 col-md-4 col-sm-6 col-lg-2" id="product-row">
   <%= image_tag(if product.image_url==="" then "https://lh3.googleusercontent.com/5sinG5_U9rajYjXRZ57nKDQsGTJG0jEG2zByNa9TndlX2Yu1MbfCtyoI2oMdRvQtxBA=w300-rw" else product.image_url end, :height => 100, class: "img-responsive") %>
   <a href="#"><h3><%= product.name %></h3></a>
   <p><%= product.description %></p>
