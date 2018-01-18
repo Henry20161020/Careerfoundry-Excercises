@@ -2,7 +2,7 @@
   <%= image_tag(if product.image_url==="" then "https://lh3.googleusercontent.com/5sinG5_U9rajYjXRZ57nKDQsGTJG0jEG2zByNa9TndlX2Yu1MbfCtyoI2oMdRvQtxBA=w300-rw" else product.image_url end, :height => 100, class: "img-responsive") %>
   <a href="#"><h3><%= product.name %></h3></a>
   <p><%= product.description %></p>
-  <strong>$ <%= product.price %>/<%= product.uom %></strong>
+  <strong><%= number_to_currency(product.price) %>/<%= product.uom %></strong>
   <br>
   <%= link_to 'Show', product %>
   <%= link_to 'Edit', edit_product_path(product) %>
