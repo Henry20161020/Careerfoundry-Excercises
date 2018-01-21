@@ -1,5 +1,8 @@
+
+
 <div class="container-fluid">
   <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <% counter=0 %>
@@ -7,7 +10,7 @@
         <li data-target="#carousel-generic" data-slide-to=<% counter.to_s %>
           <%= " class='active'" if product == @products.first %>
         </li>
-        <% counter+=1 %>        
+        <% counter+=1 %>
       <% end %>
     </ol>
 
@@ -15,7 +18,7 @@
     <div class="carousel-inner" role="listbox">
       <% @products.each do |product| %>
       <div class="item<%= " active" if product == @products.first %>">
-        <%= image_tag(product.image_url, class: "img-responsive", size: "640x480") %>
+        <%= image_tag(product.image_url) %>
         <div class="carousel-caption">
           <%= product.name %>
         </div>
