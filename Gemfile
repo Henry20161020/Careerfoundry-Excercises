@@ -61,3 +61,6 @@ end
 gem 'devise'
 
 gem 'bcrypt-ruby', '3.1.5', :require => 'bcrypt'
+gem 'bcrypt', '~> 3.1.7', platforms: :ruby
+
+gem 'cancancan', '~> 1.10'
