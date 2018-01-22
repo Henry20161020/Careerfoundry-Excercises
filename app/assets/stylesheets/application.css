@@ -17,3 +17,26 @@
 #form-search {
   margin-top: 14px;
 }
+
+.customized-form {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.customized-form input[type="email"],
+.customized-form input[type="password"],
+.customized-form input[type="submit"],
+.customized-form button,
+.customized-form textarea
+{
+  width: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -moz-box-shadow: 0px 0px 10px #d3d3d3;
+  -webkit-box-shadow: 0px 2px 10px #d3d3d3;
+}
+
+.customized-form #remember label {
+  display: inline-block;
+}

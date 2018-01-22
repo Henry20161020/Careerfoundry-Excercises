@@ -57,3 +57,7 @@ gem 'jquery-rails'
 group :production do
   gem 'pg'
 end
+
+gem 'devise'
+
+gem 'bcrypt-ruby', '3.1.5', :require => 'bcrypt'
