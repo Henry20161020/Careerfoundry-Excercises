@@ -17,6 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, guest: 5432, host: 5432
 
   config.vm.provision :chef_solo do |chef|
+    chef.version = '12.19.36'
     chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
     chef.add_recipe "apt"

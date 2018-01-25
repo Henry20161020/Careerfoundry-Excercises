@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.3'
+ruby '2.5.0'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -61,6 +61,6 @@ end
 gem 'devise'
 
 gem 'bcrypt-ruby', '3.1.5', :require => 'bcrypt'
-gem 'bcrypt', '~> 3.1.7', platforms: :ruby
+gem 'bcrypt', '~> 3.1.7'
 
 gem 'cancancan', '~> 1.10'
