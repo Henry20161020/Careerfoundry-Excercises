@@ -15,6 +15,6 @@
 //= require jquery3
 //= require_tree .
 
-$(document).ready(function(){
-  $(".alert").delay(2000).fadeOut(1000);
-})
+$(document).on('turbolinks:load ajaxSuccess', function() {
+  $(".alert").delay(2000).fadeOut(1000)
+});
