@@ -14,7 +14,8 @@
 //= require turbolinks
 //= require jquery3
 //= require_tree .
+//= require jquery.raty.js
 
 $(document).on('turbolinks:load ajaxSuccess', function() {
-  $(".alert").delay(2000).fadeOut(1000)
+  $(".alert").delay(2000).fadeOut(1000);
 });
