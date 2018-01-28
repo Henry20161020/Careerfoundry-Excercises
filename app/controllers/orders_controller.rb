@@ -28,7 +28,7 @@ class OrdersController < ApplicationController
 
     def check_user
       @user = User.find(@order.user_id)
-      if current_user != @user
+      if current_user != @user && !current_user.admin?
         redirect_to orders_path, alert: "your are not authorized to access this page"
       end
     end
