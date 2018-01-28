@@ -64,3 +64,6 @@ gem 'bcrypt-ruby', '3.1.5', :require => 'bcrypt'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'cancancan', '~> 1.10'
+
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.1.0'
