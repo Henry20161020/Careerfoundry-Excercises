@@ -22,11 +22,12 @@ class PaymentsController < ApplicationController
     end
     rescue Stripe::CardError => e
       # The card has been declined
+      byebug
       body = e.json_body
       err = body[:error]
       flash[:alert] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
       redirect_to product_path(@product)
     end
-    
+
   end
 end
