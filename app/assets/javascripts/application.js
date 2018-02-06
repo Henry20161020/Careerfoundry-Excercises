@@ -10,12 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
+//= require jquery
+//= require jquery_ujs
 //= require turbolinks
-//= require jquery3
 //= require_tree .
 //= require jquery.raty.js
-
-$(document).on('turbolinks:load ajaxSuccess', function() {
-  $(".alert").delay(2000).fadeOut(1000);
-});
