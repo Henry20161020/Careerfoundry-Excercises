@@ -5,6 +5,8 @@ test:
   adapter: async
 
 production:
-  adapter: postgresql
-  url: postgres://axnelsdjpjqdsk:00a401774bd975ba1f7f96b06c40bfd5097d37a030a41749ff2b3cf2b1a50c40@ec2-107-22-219-34.compute-1.amazonaws.com:5432/d2on3f3dak17cq
-  channel_prefix: nameofapp_production
+  # adapter: postgresql
+  # url: postgres://axnelsdjpjqdsk:00a401774bd975ba1f7f96b06c40bfd5097d37a030a41749ff2b3cf2b1a50c40@ec2-107-22-219-34.compute-1.amazonaws.com:5432/d2on3f3dak17cq
+  adapter: redis
+  url: redis://h:p0e8a0d6464040368e82ef0d7f888664d407fd498e23cf11d8dde0851ac007306@ec2-54-174-198-121.compute-1.amazonaws.com:6559
+  # channel_prefix: nameofapp_production
