@@ -98,5 +98,6 @@ Rails.application.configure do
                      :socket_failure_delay => 0.2,
                      :down_retry_delay => 60
                     }
-                    
+  config.web_socket_server_url = "wss://saware-supplychain-solution.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://saware-supplychain-solution.herokuapp.com', 'http://saware-supplychain-solution.herokuapp.com']
 end
