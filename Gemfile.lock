@@ -238,7 +238,6 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.4)
   rails-controller-testing
-  redis
   redis-rails
   rspec-rails (~> 3.7)
   sass-rails (~> 5.0)
