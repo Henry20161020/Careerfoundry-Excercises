@@ -1,20 +1,16 @@
-var refreshRating = function() {
-  alert("refreshRating now");
+function refreshRating() {
   $('.rating').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
     starOn: '<%= asset_path 'star-on.png' %>',
     scoreName: 'comment[rating]'
   });
-  console.log($('.rated'));
   $('.rated').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
     starOn: '<%= asset_path 'star-on.png' %>',
     readOnly: true,
     score: function() {
-      alert("Updating score now");
-      console.log($(this).attr('data-score'));
       return $(this).attr('data-score');
     }
   });
