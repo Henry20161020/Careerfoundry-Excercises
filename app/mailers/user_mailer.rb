@@ -13,4 +13,11 @@ class UserMailer < ApplicationMailer
     mail(to: user.email,
          subject: "Welcome to #{@appname}!")
   end
+
+  def thank_you(email,name,message)
+    @message = message
+    mail(from: 'customer_service@saware.com',
+         to: email,
+         subject: "Thank you, #{name}")
+  end
 end
